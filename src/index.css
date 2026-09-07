@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #e60023;
+  --color-dark: #0a0a0a;
+  --color-muted: #888888;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-script: "Dancing Script", cursive;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #fff;
+  color: #0a0a0a;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 3px;
+}
+
+.outline-text {
+  -webkit-text-stroke: 1.5px #0a0a0a;
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .outline-text {
+    -webkit-text-stroke-width: 2px;
+  }
+}
+
+.crosshair::before,
+.crosshair::after {
+  content: "+";
+  position: absolute;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ccc;
+  line-height: 1;
+}
+
+.crosshair-tl::before {
+  top: 24px;
+  left: 24px;
+}
+.crosshair-tr::after {
+  top: 24px;
+  right: 24px;
+}
+.crosshair-bl::before {
+  bottom: 24px;
+  left: 24px;
+}
+.crosshair-br::after {
+  bottom: 24px;
+  right: 24px;
+}
