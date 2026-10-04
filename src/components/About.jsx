@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import aboutPhoto from "../assets/about/about.jpeg";
 
 import bassPhoto from "../assets/about/bass.jpeg";
-import futsalPhoto from "../assets/about/futsal.jpeg";
+import futsalPhoto from "../assets/about/Futsal.jpeg";
 import skatePhoto from "../assets/about/skate.jpeg";
 import bolaPhoto from "../assets/about/bola.jpg";
 import teaterPhoto from "../assets/about/teater.jpg";
